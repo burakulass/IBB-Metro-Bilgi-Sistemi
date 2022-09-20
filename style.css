@@ -1,0 +1,244 @@
+body {
+     margin: 0; 
+     padding: 0; 
+}
+
+#map {
+    width: 650px;
+    height: 450px;
+    width: 850px; height: 550px; 
+    margin: 3vh auto;
+    left: 17vh; 
+}
+.mapAndFilter{
+    display: flex;
+    justify-content: space-between;
+}
+#menu {
+     background: #fff;
+     padding: 10px;
+     font-family: 'Open Sans', sans-serif;
+}
+
+#marker {
+     background-image: url('https://sites-formations.univ-rennes2.fr/mastersigat/images/75709127.png');
+     background-size: cover;
+     width: 50px;
+     height: 50px;  
+     border-radius: 50%;
+     cursor: pointer;
+}
+
+.Mypopup .mapboxgl-popup-content {
+      background-color: black;
+      color : white;
+      opacity : 0.7;
+}
+
+#menu_layer {
+      background: #fff;
+      position: absolute;
+      z-index: 1;
+      top: 10px;
+      right: 10px;
+      border-radius: 3px;
+      width: 120px;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      font-family: 'Open Sans', sans-serif;
+      }
+       
+#menu_layer a {
+      font-size: 13px;
+      color: #404040;
+      display: block;
+      margin: 0;
+      padding: 0;
+      padding: 10px;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+      text-align: center;
+}
+       
+#menu_layer a:last-child {
+      border: none;
+}
+       
+#menu_layer a:hover {
+      background-color: #f8f8f8;
+      color: #404040;
+}
+       
+#menu_layer a.active {
+      background-color: #3887be;
+      color: #ffffff;
+}
+       
+#menu_layer a.active:hover {
+      background: #3074a4;
+}
+  
+#marker {
+     background-image:
+     url('https://sites-formations.univ-rennes2.fr/mastersigat/images/75709127.png');
+     background-size: cover;
+     width: 32px;
+     height: 32px;
+     border-radius: 50%;
+     cursor: pointer;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+}
+  
+.h_metro{
+     color: #E2020E;
+     font-size: 14px;
+  }
+.h_hastane{
+      color: #069839;
+      font-size: 14px;
+}
+p{
+    font-size: 14px;
+}
+
+
+/* DİSTANCE */
+ 
+.distance-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+     
+.distance-container > * {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 11px;
+    line-height: 18px;
+    display: block;
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* ispark filtreleme kısmı */
+
+.map-overlay-Metro {
+    
+    position: absolute;
+    height: 275px;
+     margin: 3vh auto;
+     left:214px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 250px;
+    overflow: hidden;
+   
+}
+
+.map-overlay-Metro fieldset {
+    display: none;
+    background: #ddd;
+    border: none;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(226, 2, 14,0.85);
+}
+
+.map-overlay-Metro input {
+    display: block;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.map-overlay-Metro .listing {
+    overflow: auto;
+    max-height: 100%;
+}
+
+.map-overlay-Metro .listing > * {
+    display: block;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.map-overlay-Metro .listing a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #404;
+    text-decoration: none;
+}
+
+.map-overlay-Metro .listing a:last-child {
+    border: none;
+}
+
+.map-overlay-Metro .listing a:hover {
+    background: rgba(226, 2, 14,0.85);
+}
+
+
+/* Hastane filtreleme kısmı */
+
+.map-overlay-Hastane {
+    
+    position: absolute;
+    height: 275px;
+     margin: 3vh auto;
+     left:214px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 250px;
+    overflow: hidden;
+   
+}
+
+.map-overlay-Hastane fieldset {
+    display: none;
+    background: #ddd;
+    border: none;
+    padding: 10px;
+    margin: 0;
+    background-color:#FECD0E;
+}
+
+.map-overlay-Hastane input {
+    display: block;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.map-overlay-Hastane .listing {
+    overflow: auto;
+    max-height: 100%;
+}
+
+.map-overlay-Hastane .listing > * {
+    display: block;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.map-overlay-Hastane .listing a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #404;
+    text-decoration: none;
+}
+
+.map-overlay-Hastane .listing a:last-child {
+    border: none;
+}
+
+.map-overlay-Hastane .listing a:hover {
+    background: #FECD0E;
+}
